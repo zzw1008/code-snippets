@@ -96,7 +96,7 @@ public class TimeStudy {
 
 		Clock.systemDefaultZone();
 		System.out.println("Clock：" + clock);
-		System.out.println(clock.systemUTC());
+		System.out.println(Clock.systemUTC());
 
 		// 日期和时间
 		LocalDateTime ldt = LocalDateTime.now();
