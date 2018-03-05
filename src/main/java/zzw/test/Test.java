@@ -32,6 +32,7 @@ class Circle extends Shape {
 		System.out.println("circle constructor");
 	}
 
+	@Override
 	public void printType() {
 		System.out.println("this is circle");
 	}

@@ -1,21 +1,37 @@
 package zzw.test;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.TreeSet;
-import java.util.LinkedHashSet;
-import java.util.LinkedList;
-
 public class Demo {
 
-	public static void main(String[] args) {
-		/** 获得当前方法名称 */
-		String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
-		System.out.println(methodName);
-		LocalDate ld = LocalDate.now();
+	private String name;
+
+	private String sex;
+
+	public Demo(String name, String sex){
+		this.name = name;
+		this.sex = sex;
 	}
 
+	public int add(int a, int b){
+		return  a + b;
+	}
+
+	public int minus(int a, int b){
+		return  a - b;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
 }
